@@ -1,0 +1,13 @@
+.rs-note {
+    position: relative; /* Устанавливаем относительное позиционирование для правильного размещения псевдоэлемента */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rs-note::after {
+    content: " (это дополнительная информация)"; /* Содержимое, которое будет добавлено */
+    color: #888; /* Цвет текста */
+    font-style: italic; /* Курсив */
+}
